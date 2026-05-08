@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web para Restaurantes en España | Ideark</title>
+    <meta name="description" content="Diseñamos páginas web profesionales para Restaurantes en España. SEO local, chatbot IA y publicidad digital. Lista en 14 días. Presupuesto sin compromiso.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ideark.es/web-para-restaurantes">
+    <meta property="og:title" content="Página web para Restaurantes | Ideark">
+    <meta property="og:description" content="Webs profesionales para Restaurantes en España. SEO local, chatbot IA y publicidad digital.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":"¿Puedo poner mi carta online?","acceptedAnswer":{"@type":"Answer","text":"Sí, incluimos tu carta completa con fotos, precios y alérgenos. Se actualiza fácilmente cuando cambias el menú."}},
+        {"@type":"Question","name":"¿Puedo recibir reservas por la web?","acceptedAnswer":{"@type":"Answer","text":"Sí, integramos un sistema de reservas online para que tus clientes reserven mesa directamente sin llamarte."}},
+        {"@type":"Question","name":"¿Aparecerá mi restaurante en Google Maps?","acceptedAnswer":{"@type":"Answer","text":"Sí, optimizamos tu ficha de Google Business para que aparezcas en las búsquedas locales y en Google Maps."}}
+    ]}
+    </script>
+    <style>
+        :root{--bg:#080c14;--bg2:#0d1422;--bg3:#111927;--accent:#00e5ff;--accent2:#7c3aed;--text:#e8edf5;--text2:#8a96a8;--border:rgba(255,255,255,0.07);--card:rgba(255,255,255,0.04)}
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        html{scroll-behavior:smooth}
+        body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
+        nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 0;transition:all .3s}
+        nav.scrolled{background:rgba(8,12,20,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:14px 0}
+        .nav-inner{max-width:1200px;margin:0 auto;padding:0 30px;display:flex;align-items:center;justify-content:space-between}
+        .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:white;text-decoration:none}
+        .logo span{color:var(--accent)}
+        .nav-links{display:flex;gap:36px;list-style:none}
+        .nav-links a{color:var(--text2);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
+        .nav-links a:hover{color:white}
+        .nav-cta{background:var(--accent);color:#080c14 !important;padding:10px 22px;border-radius:8px;font-weight:700 !important}
+        .nav-cta:hover{background:#00c4db !important}
+        .hamburger{display:none;background:none;border:none;color:white;font-size:1.4rem;cursor:pointer}
+        .hero-sector{min-height:80vh;display:flex;align-items:center;padding:140px 30px 80px;position:relative;overflow:hidden}
+        .hero-sector-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(0,229,255,.1) 0%,transparent 60%),radial-gradient(ellipse 40% 40% at 80% 60%,rgba(124,58,237,.08) 0%,transparent 50%)}
+        .hero-sector-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 0%,transparent 100%)}
+        .hero-sector-inner{max-width:1200px;margin:0 auto;width:100%;position:relative;z-index:1}
+        .breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:20px;font-size:.82rem;color:var(--text2)}
+        .breadcrumb a{color:var(--text2);text-decoration:none}
+        .breadcrumb a:hover{color:var(--accent)}
+        .breadcrumb span{color:var(--text2)}
+        .sector-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,229,255,.08);border:1px solid rgba(0,229,255,.2);color:var(--accent);padding:6px 16px;border-radius:100px;font-size:.82rem;font-weight:600;margin-bottom:24px}
+        .hero-sector h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,3.5vw,3.2rem);font-weight:800;line-height:1.15;letter-spacing:-1px;margin-bottom:20px}
+        .hero-sector h1 em{font-style:normal;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .hero-sector p{font-size:1.05rem;color:var(--text2);max-width:580px;line-height:1.75;margin-bottom:36px;font-weight:300}
+        .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+        .btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#080c14;padding:14px 28px;border-radius:10px;font-weight:700;font-size:.95rem;text-decoration:none;transition:all .25s;box-shadow:0 0 30px rgba(0,229,255,.3)}
+        .btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 50px rgba(0,229,255,.5)}
+        .btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--text);padding:14px 28px;border-radius:10px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid var(--border);transition:all .25s}
+        .btn-secondary:hover{border-color:rgba(255,255,255,.2);background:var(--card)}
+        .container{max-width:1200px;margin:0 auto;padding:0 30px}
+        .section-tag{display:inline-block;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--accent);margin-bottom:14px}
+        .section-title{font-family:'Syne',sans-serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:800;letter-spacing:-.5px;line-height:1.15;margin-bottom:16px}
+        .section-sub{color:var(--text2);font-size:1rem;max-width:560px;line-height:1.75;font-weight:300}
+        /* PAIN POINTS */
+        .pain-section{padding:80px 0;background:var(--bg2)}
+        .pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px;margin-top:48px}
+        .pain-card{background:var(--bg3);padding:32px 28px;border-left:3px solid rgba(231,76,60,.4)}
+        .pain-card .pain-icon{font-size:1.6rem;margin-bottom:14px}
+        .pain-card h3{font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin-bottom:10px;color:white}
+        .pain-card p{font-size:.88rem;color:var(--text2);line-height:1.7}
+        /* SOLUCION */
+        .solucion-section{padding:100px 0}
+        .solucion-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:48px}
+        .sol-card{background:var(--bg3);border:1px solid var(--border);border-radius:16px;padding:32px 28px;transition:all .3s}
+        .sol-card:hover{border-color:var(--accent);background:rgba(0,229,255,.03)}
+        .sol-icon{width:48px;height:48px;border-radius:12px;background:rgba(0,229,255,.1);border:1px solid rgba(0,229,255,.2);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:1.1rem;margin-bottom:20px}
+        .sol-card h3{font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin-bottom:10px}
+        .sol-card p{font-size:.87rem;color:var(--text2);line-height:1.7}
+        /* FAQ */
+        .faq-section{padding:100px 0;background:var(--bg2)}
+        .faq-list{display:flex;flex-direction:column;gap:2px;margin-top:48px}
+        .faq-item{background:var(--bg3);padding:28px 32px;cursor:pointer;transition:all .2s}
+        .faq-item:hover{background:rgba(0,229,255,.03)}
+        .faq-q{display:flex;justify-content:space-between;align-items:center;gap:16px}
+        .faq-q h3{font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:white}
+        .faq-q i{color:var(--accent);font-size:.9rem;flex-shrink:0;transition:transform .3s}
+        .faq-a{display:none;margin-top:16px;font-size:.88rem;color:var(--text2);line-height:1.75}
+        .faq-item.open .faq-a{display:block}
+        .faq-item.open .faq-q i{transform:rotate(45deg)}
+        /* CTA */
+        .cta-sector{padding:100px 0;text-align:center;position:relative;overflow:hidden}
+        .cta-sector::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:300px;background:radial-gradient(ellipse,rgba(0,229,255,.08),transparent 70%);pointer-events:none}
+        .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+        .btn-whatsapp{display:inline-flex;align-items:center;gap:8px;background:#25d366;color:white;padding:14px 28px;border-radius:10px;font-weight:700;font-size:.95rem;text-decoration:none;transition:all .25s}
+        .btn-whatsapp:hover{background:#20b858;transform:translateY(-2px)}
+        /* OTROS SECTORES */
+        .otros-section{padding:60px 0;border-top:1px solid var(--border)}
+        .otros-grid{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+        .otro-link{background:var(--card);border:1px solid var(--border);color:var(--text2);padding:10px 20px;border-radius:100px;font-size:.85rem;text-decoration:none;transition:all .2s}
+        .otro-link:hover{border-color:var(--accent);color:var(--accent)}
+        /* FOOTER */
+        footer{background:var(--bg2);border-top:1px solid var(--border);padding:50px 0 24px}
+        .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+        .footer-brand .logo{display:block;margin-bottom:12px}
+        .footer-brand p{font-size:.85rem;color:var(--text2);line-height:1.7}
+        .footer-col h4{font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;margin-bottom:14px}
+        .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+        .footer-col ul li a{color:var(--text2);text-decoration:none;font-size:.85rem;transition:color .2s}
+        .footer-col ul li a:hover{color:var(--accent)}
+        .footer-bottom{padding-top:20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+        .footer-bottom p{font-size:.8rem;color:var(--text2)}
+        .footer-bottom a{color:var(--text2);text-decoration:none}
+        .footer-bottom a:hover{color:var(--accent)}
+        .wa-float{position:fixed;bottom:28px;right:28px;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.5rem;text-decoration:none;z-index:50;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .3s}
+        .wa-float:hover{transform:scale(1.1)}
+        @media(max-width:768px){.nav-links{display:none}.hamburger{display:block}.footer-grid{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+
+<nav id="navbar">
+    <div class="nav-inner">
+        <a href="/" class="logo">ide<span>ark</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/#servicios">Servicios</a></li>
+            <li><a href="/#proceso">Cómo trabajamos</a></li>
+            <li><a href="/#precios">Precios</a></li>
+            <li><a href="/#contacto" class="nav-cta">Hablar con nosotros</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+</nav>
+
+<section class="hero-sector">
+    <div class="hero-sector-bg"></div>
+    <div class="hero-sector-grid"></div>
+    <div class="hero-sector-inner">
+        <div class="breadcrumb">
+            <a href="/">Inicio</a>
+            <span>→</span>
+            <span>Web para Restaurantes</span>
+        </div>
+        <div class="sector-badge">🍕 Especialistas en webs para Restaurantes</div>
+        <h1>La web que necesita<br>tu <em>Restaurante</em> para<br>conseguir más clientes</h1>
+        <p>Tu restaurante merece estar en Google cuando alguien busca dónde comer cerca. Una web profesional con carta online, reservas y reseñas visibles que convierte visitas en mesas llenas.</p>
+        <div class="hero-btns">
+            <a href="/#contacto" class="btn-primary"><i class="fas fa-rocket"></i> Quiero mi web ahora</a>
+            <a href="https://wa.me/34603018190?text=Hola,%20soy%20Restaurante%20y%20quiero%20una%20web%20profesional" class="btn-whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp directo</a>
+        </div>
+    </div>
+</section>
+
+<section class="pain-section">
+    <div class="container">
+        <span class="section-tag">El problema</span>
+        <h2 class="section-title">¿Te suena familiar?</h2>
+        <p class="section-sub">Lo que viven la mayoría de Restaurantes sin web profesional.</p>
+        <div class="pain-grid">
+            <div class="pain-card"><div class="pain-icon">😔</div><h3>No apareces en Google Maps ni en búsquedas locales</h3><p>Tus competidores aparecen en Google y tú no. Cada día pierdes clientes que ni siquiera saben que existes.</p></div>
+            <div class="pain-card"><div class="pain-icon">📵</div><h3>No tienes carta online ni sistema de reservas</h3><p>Dependes del boca a boca y de las redes sociales. Sin una web propia, no tienes control sobre tu imagen.</p></div>
+            <div class="pain-card"><div class="pain-icon">⏰</div><h3>Respondes las mismas preguntas por WhatsApp todo el día</h3><p>Respondes las mismas preguntas una y otra vez por WhatsApp. Tu tiempo vale demasiado para eso.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="solucion-section">
+    <div class="container">
+        <span class="section-tag">La solución</span>
+        <h2 class="section-title">Una web que trabaja<br>por ti las 24 horas</h2>
+        <p class="section-sub">Todo lo que incluye tu web profesional para Restaurantes.</p>
+        <div class="solucion-grid">
+            <div class="sol-card"><div class="sol-icon"><i class="fas fa-search"></i></div><h3>Aparece en Google cuando buscan restaurante cerca</h3><p>Aparece en Google cuando alguien busca "Restaurante en [tu ciudad]". SEO local optimizado desde el día 1.</p></div>
+            <div class="sol-card"><div class="sol-icon"><i class="fas fa-mobile-alt"></i></div><h3>Carta online y reservas desde el móvil</h3><p>El 70% de tus clientes te buscarán desde el móvil. Tu web se ve perfecta en cualquier dispositivo.</p></div>
+            <div class="sol-card"><div class="sol-icon"><i class="fas fa-robot"></i></div><h3>Chatbot que responde horarios y reservas 24h</h3><p>Un chatbot responde preguntas frecuentes y capta datos de clientes mientras tú trabajas o duermes.</p></div>
+            <div class="sol-card"><div class="sol-icon"><i class="fas fa-star"></i></div><h3>Galería de platos y reseñas que generan confianza</h3><p>Muestra tus reseñas de Google, tus trabajos y tu historia. Convierte visitas en llamadas y presupuestos.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <div class="container">
+        <span class="section-tag">Preguntas frecuentes</span>
+        <h2 class="section-title">Lo que preguntan<br>los Restaurantes</h2>
+        <div class="faq-list">
+            <div class="faq-item"><div class="faq-q"><h3>¿Puedo poner mi carta online?</h3><i class="fas fa-plus"></i></div><div class="faq-a">Sí, incluimos tu carta completa con fotos, precios y alérgenos. Se actualiza fácilmente cuando cambias el menú.</div></div>
+            <div class="faq-item"><div class="faq-q"><h3>¿Puedo recibir reservas por la web?</h3><i class="fas fa-plus"></i></div><div class="faq-a">Sí, integramos un sistema de reservas online para que tus clientes reserven mesa directamente sin llamarte.</div></div>
+            <div class="faq-item"><div class="faq-q"><h3>¿Aparecerá mi restaurante en Google Maps?</h3><i class="fas fa-plus"></i></div><div class="faq-a">Sí, optimizamos tu ficha de Google Business para que aparezcas en las búsquedas locales y en Google Maps.</div></div>
+            <div class="faq-item"><div class="faq-q"><h3>¿Cuánto tiempo tardáis en hacer la web?</h3><i class="fas fa-plus"></i></div><div class="faq-a">Tu web estará lista y online en 14 días desde que nos das el visto bueno al diseño. Sin esperas ni excusas.</div></div>
+            <div class="faq-item"><div class="faq-q"><h3>¿Necesito saber de tecnología para gestionar la web?</h3><i class="fas fa-plus"></i></div><div class="faq-a">No. Nosotros nos encargamos de todo — hosting, mantenimiento, actualizaciones y seguridad. Tú solo te preocupas de tu negocio.</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-sector">
+    <div class="container">
+        <span class="section-tag">Empecemos</span>
+        <h2 class="section-title">¿Listo para conseguir<br>más clientes con tu web?</h2>
+        <p style="color:var(--text2);font-size:1rem;max-width:480px;margin:0 auto;line-height:1.75">Cuéntanos tu proyecto. Presupuesto gratuito en menos de 24 horas. Sin compromiso.</p>
+        <div class="cta-btns">
+            <a href="https://wa.me/34603018190?text=Hola,%20soy%20Restaurante%20y%20quiero%20una%20web%20profesional" class="btn-whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp directo</a>
+            <a href="mailto:info@ideark.es" class="btn-secondary"><i class="fas fa-envelope"></i> Enviar email</a>
+        </div>
+    </div>
+</section>
+
+<section class="otros-section">
+    <div class="container">
+        <span class="section-tag">Más sectores</span>
+        <div class="otros-grid">
+            <a href="/web-para-restaurantes" class="otro-link">🍕 Restaurantes</a>
+            <a href="/web-para-fontaneros" class="otro-link">🔧 Fontaneros</a>
+            <a href="/web-para-peluquerias" class="otro-link">💇 Peluquerías</a>
+            <a href="/web-para-clinicas" class="otro-link">🦷 Clínicas</a>
+            <a href="/web-para-reformas" class="otro-link">🏗️ Reformas</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand"><a href="/" class="logo">ide<span>ark</span></a><p>Webs profesionales, IA y publicidad digital para pymes en España.</p></div>
+            <div class="footer-col"><h4>Servicios</h4><ul><li><a href="/#servicios">Diseño web</a></li><li><a href="/#servicios">SEO local</a></li><li><a href="/#servicios">Chatbot IA</a></li><li><a href="/#servicios">Publicidad digital</a></li></ul></div>
+            <div class="footer-col"><h4>Contacto</h4><ul><li><a href="https://wa.me/34603018190"><i class="fab fa-whatsapp"></i> WhatsApp</a></li><li><a href="mailto:info@ideark.es"><i class="fas fa-envelope"></i> info@ideark.es</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Ideark. Todos los derechos reservados.</p><p><a href="#">Aviso Legal</a> · <a href="#">Privacidad</a></p></div>
+    </div>
+</footer>
+
+<a href="https://wa.me/34603018190" class="wa-float" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+const navbar=document.getElementById('navbar');
+window.addEventListener('scroll',()=>navbar.classList.toggle('scrolled',window.scrollY>50));
+const hamburger=document.getElementById('hamburger');
+const navLinks=document.getElementById('navLinks');
+hamburger.addEventListener('click',()=>{navLinks.classList.toggle('open');hamburger.innerHTML=navLinks.classList.contains('open')?'<i class="fas fa-times"></i>':'<i class="fas fa-bars"></i>';});
+document.querySelectorAll('.faq-item').forEach(item=>{item.addEventListener('click',()=>{const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open');});});
+</script>
+</body>
+</html>

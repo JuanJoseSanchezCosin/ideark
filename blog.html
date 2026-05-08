@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Consejos de marketing digital y webs para pymes | Ideark</title>
+    <meta name="description" content="Artículos prácticos sobre diseño web, SEO local, automatización con IA y publicidad digital para pymes y negocios locales en España.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ideark.es/blog">
+    <meta property="og:title" content="Blog Ideark — Marketing digital para pymes">
+    <meta property="og:description" content="Artículos prácticos sobre diseño web, SEO local, IA y publicidad digital para negocios locales en España.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+    <style>
+        :root{--bg:#080c14;--bg2:#0d1422;--bg3:#111927;--accent:#00e5ff;--accent2:#7c3aed;--text:#e8edf5;--text2:#8a96a8;--border:rgba(255,255,255,0.07);--card:rgba(255,255,255,0.04)}
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        html{scroll-behavior:smooth}
+        body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
+        nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 0;transition:all .3s}
+        nav.scrolled{background:rgba(8,12,20,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:14px 0}
+        .nav-inner{max-width:1200px;margin:0 auto;padding:0 30px;display:flex;align-items:center;justify-content:space-between}
+        .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:white;text-decoration:none}
+        .logo span{color:var(--accent)}
+        .nav-links{display:flex;gap:36px;list-style:none}
+        .nav-links a{color:var(--text2);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
+        .nav-links a:hover{color:white}
+        .nav-cta{background:var(--accent);color:#080c14 !important;padding:10px 22px;border-radius:8px;font-weight:700 !important}
+        .hamburger{display:none;background:none;border:none;color:white;font-size:1.4rem;cursor:pointer}
+        /* HERO */
+        .blog-hero{padding:140px 30px 60px;background:var(--bg2);border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+        .blog-hero::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(0,229,255,.08),transparent 70%);pointer-events:none}
+        .blog-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1}
+        .blog-hero h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:800;letter-spacing:-.5px;margin-bottom:12px}
+        .blog-hero p{color:var(--text2);font-size:1rem;max-width:500px;line-height:1.75;font-weight:300}
+        /* GRID */
+        .blog-section{padding:80px 30px 100px}
+        .blog-inner{max-width:1200px;margin:0 auto}
+        .blog-filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:48px}
+        .filter-btn{background:var(--card);border:1px solid var(--border);color:var(--text2);padding:8px 18px;border-radius:100px;font-size:.83rem;font-weight:600;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
+        .filter-btn:hover,.filter-btn.active{background:var(--accent);color:#080c14;border-color:var(--accent)}
+        .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px}
+        .blog-card{background:var(--bg3);border:1px solid var(--border);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:all .3s}
+        .blog-card:hover{border-color:var(--accent);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,229,255,.08)}
+        .blog-card-top{padding:28px 28px 0}
+        .blog-card-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(0,229,255,.08);border:1px solid rgba(0,229,255,.15);color:var(--accent);padding:4px 12px;border-radius:100px;font-size:.75rem;font-weight:700;margin-bottom:16px}
+        .blog-card h2{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;color:white;line-height:1.4;margin-bottom:12px}
+        .blog-card p{font-size:.87rem;color:var(--text2);line-height:1.7;margin-bottom:20px}
+        .blog-card-footer{padding:16px 28px 24px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;margin-top:auto}
+        .blog-card-meta{font-size:.78rem;color:var(--text2);display:flex;align-items:center;gap:6px}
+        .blog-card-meta i{color:var(--accent);font-size:.75rem}
+        .blog-card-link{font-size:.82rem;font-weight:700;color:var(--accent);display:flex;align-items:center;gap:5px}
+        /* CTA */
+        .blog-cta{background:var(--bg2);border-top:1px solid var(--border);padding:80px 30px;text-align:center}
+        .blog-cta-inner{max-width:600px;margin:0 auto}
+        .blog-cta h2{font-family:'Syne',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin-bottom:14px}
+        .blog-cta p{color:var(--text2);font-size:1rem;line-height:1.75;margin-bottom:28px}
+        .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+        .btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#080c14;padding:13px 26px;border-radius:10px;font-weight:700;font-size:.9rem;text-decoration:none;transition:all .25s}
+        .btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 30px rgba(0,229,255,.4)}
+        .btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--text);padding:13px 26px;border-radius:10px;font-weight:600;font-size:.9rem;text-decoration:none;border:1px solid var(--border);transition:all .25s}
+        .btn-secondary:hover{border-color:rgba(255,255,255,.2)}
+        /* FOOTER */
+        footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px 0 24px}
+        .footer-bottom{max-width:1200px;margin:0 auto;padding:0 30px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+        .footer-bottom p{font-size:.8rem;color:var(--text2)}
+        .footer-bottom a{color:var(--text2);text-decoration:none}
+        .footer-bottom a:hover{color:var(--accent)}
+        .wa-float{position:fixed;bottom:28px;right:28px;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.5rem;text-decoration:none;z-index:50;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .3s}
+        .wa-float:hover{transform:scale(1.1)}
+        @media(max-width:768px){.nav-links{display:none}.hamburger{display:block}.blog-grid{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+
+<nav id="navbar">
+    <div class="nav-inner">
+        <a href="/" class="logo">ide<span>ark</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/#servicios">Servicios</a></li>
+            <li><a href="/blog" class="active">Blog</a></li>
+            <li><a href="/#precios">Precios</a></li>
+            <li><a href="/#contacto" class="nav-cta">Hablar con nosotros</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+</nav>
+
+<section class="blog-hero">
+    <div class="blog-hero-inner">
+        <span style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--accent);display:block;margin-bottom:12px">Blog</span>
+        <h1>Consejos para hacer crecer<br>tu negocio online</h1>
+        <p>Artículos prácticos sobre webs, SEO local, automatización con IA y publicidad digital para pymes en España.</p>
+    </div>
+</section>
+
+<section class="blog-section">
+    <div class="blog-inner">
+        <div class="blog-filters">
+            <button class="filter-btn active">Todos</button>
+            <button class="filter-btn">Diseño web</button>
+            <button class="filter-btn">SEO local</button>
+            <button class="filter-btn">Automatización IA</button>
+            <button class="filter-btn">Publicidad</button>
+            <button class="filter-btn">Kit Digital</button>
+        </div>
+        <div class="blog-grid">
+
+            <a href="/blog/cuanto-cuesta-web-restaurante" class="blog-card">
+                <div class="blog-card-top">
+                    <div class="blog-card-tag">🍕 Restaurantes</div>
+                    <h2>¿Cuánto cuesta una página web para un restaurante en España? Precios reales 2026</h2>
+                    <p>Precios reales del mercado, qué debe incluir y cómo rentabilizar tu web desde el primer mes.</p>
+                </div>
+                <div class="blog-card-footer">
+                    <span class="blog-card-meta"><i class="fas fa-clock"></i> 5 min · 9 mayo 2026</span>
+                    <span class="blog-card-link">Leer <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="/blog/cuanto-cuesta-web-fontanero" class="blog-card">
+                <div class="blog-card-top">
+                    <div class="blog-card-tag">🔧 Fontaneros</div>
+                    <h2>¿Cuánto cuesta una página web para fontanero? ¿Vale la pena?</h2>
+                    <p>Por qué el SEO local es la mejor herramienta para un fontanero y cuánto cuesta implantarlo.</p>
+                </div>
+                <div class="blog-card-footer">
+                    <span class="blog-card-meta"><i class="fas fa-clock"></i> 5 min · 9 mayo 2026</span>
+                    <span class="blog-card-link">Leer <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="/blog/como-conseguir-clientes-google-pyme" class="blog-card">
+                <div class="blog-card-top">
+                    <div class="blog-card-tag">📈 SEO Local</div>
+                    <h2>Cómo conseguir más clientes con Google si tienes una pyme o negocio local</h2>
+                    <p>Guía práctica con estrategias reales para posicionarte en Google sin gastar una fortuna.</p>
+                </div>
+                <div class="blog-card-footer">
+                    <span class="blog-card-meta"><i class="fas fa-clock"></i> 6 min · 9 mayo 2026</span>
+                    <span class="blog-card-link">Leer <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="/blog/kit-digital-2026-que-es" class="blog-card">
+                <div class="blog-card-top">
+                    <div class="blog-card-tag">💰 Kit Digital</div>
+                    <h2>Kit Digital 2026: qué es, cuánto da y cómo pedirlo para tu negocio</h2>
+                    <p>Todo sobre las ayudas de hasta 12.000€ del Gobierno para digitalizar tu pyme. Paso a paso.</p>
+                </div>
+                <div class="blog-card-footer">
+                    <span class="blog-card-meta"><i class="fas fa-clock"></i> 4 min · 9 mayo 2026</span>
+                    <span class="blog-card-link">Leer <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="/blog/chatbot-ia-para-negocios-locales" class="blog-card">
+                <div class="blog-card-top">
+                    <div class="blog-card-tag">🤖 Automatización IA</div>
+                    <h2>Chatbot con IA para negocios locales: qué es, cuánto cuesta y para qué sirve</h2>
+                    <p>Cómo un chatbot puede responder clientes 24h, captar leads y ahorrarte horas cada semana.</p>
+                </div>
+                <div class="blog-card-footer">
+                    <span class="blog-card-meta"><i class="fas fa-clock"></i> 5 min · 9 mayo 2026</span>
+                    <span class="blog-card-link">Leer <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<section class="blog-cta">
+    <div class="blog-cta-inner">
+        <span style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--accent);display:block;margin-bottom:12px">¿Listo para empezar?</span>
+        <h2>Tu negocio merece una web que trabaje por ti</h2>
+        <p>Presupuesto gratuito en 24 horas. Sin compromiso y sin tecnicismos.</p>
+        <div class="cta-btns">
+            <a href="/#contacto" class="btn-primary"><i class="fas fa-rocket"></i> Solicitar presupuesto</a>
+            <a href="/#precios" class="btn-secondary">Ver precios</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Ideark. Todos los derechos reservados. · <a href="/">Inicio</a> · <a href="/blog">Blog</a> · <a href="/#contacto">Contacto</a></p>
+        <p><a href="#">Aviso Legal</a> · <a href="#">Privacidad</a></p>
+    </div>
+</footer>
+
+<a href="https://wa.me/34603018190" class="wa-float" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+const navbar=document.getElementById('navbar');
+window.addEventListener('scroll',()=>navbar.classList.toggle('scrolled',window.scrollY>50));
+const hamburger=document.getElementById('hamburger');
+const navLinks=document.getElementById('navLinks');
+hamburger.addEventListener('click',()=>{navLinks.classList.toggle('open');hamburger.innerHTML=navLinks.classList.contains('open')?'<i class="fas fa-times"></i>':'<i class="fas fa-bars"></i>';});
+document.querySelectorAll('.filter-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');});});
+</script>
+</body>
+</html>

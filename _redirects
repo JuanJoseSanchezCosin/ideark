@@ -1,0 +1,16 @@
+# PÁGINAS PRINCIPALES
+/blog           /blog.html          200
+
+# SECTORES
+/web-para-restaurantes      /sectores/web-para-restaurante.html     200
+/web-para-fontaneros        /sectores/web-para-fontanero.html       200
+/web-para-peluquerias       /sectores/web-para-peluqueria.html      200
+/web-para-clinicas          /sectores/web-para-clinica.html         200
+/web-para-reformas          /sectores/web-para-reforma.html         200
+
+# BLOG
+/blog/cuanto-cuesta-web-restaurante         /blog/cuanto-cuesta-web-restaurante.html        200
+/blog/cuanto-cuesta-web-fontanero           /blog/cuanto-cuesta-web-fontanero.html          200
+/blog/como-conseguir-clientes-google-pyme   /blog/como-conseguir-clientes-google-pyme.html  200
+/blog/kit-digital-2026-que-es               /blog/kit-digital-2026-que-es.html              200
+/blog/chatbot-ia-para-negocios-locales      /blog/chatbot-ia-para-negocios-locales.html     200
