@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Mensaje recibido! | Ideark</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+    <style>
+        :root{--bg:#080c14;--bg2:#0d1422;--bg3:#111927;--accent:#00e5ff;--text:#e8edf5;--text2:#8a96a8;--border:rgba(255,255,255,0.07)}
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
+        nav{padding:20px 30px;display:flex;align-items:center;border-bottom:1px solid var(--border)}
+        .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:white;text-decoration:none}
+        .logo span{color:var(--accent)}
+        main{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 20px}
+        .card{background:var(--bg3);border:1px solid var(--border);border-radius:24px;padding:60px 50px;text-align:center;max-width:580px;width:100%}
+        .icon{width:80px;height:80px;background:linear-gradient(135deg,rgba(0,229,255,.2),rgba(124,58,237,.2));border:1px solid rgba(0,229,255,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 28px;font-size:2rem;color:var(--accent)}
+        h1{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;margin-bottom:14px}
+        p{color:var(--text2);line-height:1.75;font-size:.95rem;margin-bottom:16px}
+        .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+        .btn-p{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#080c14;padding:13px 26px;border-radius:10px;font-weight:700;font-size:.9rem;text-decoration:none;transition:all .25s}
+        .btn-p:hover{transform:translateY(-2px);box-shadow:0 0 30px rgba(0,229,255,.4)}
+        .btn-s{display:inline-flex;align-items:center;gap:8px;background:#25d366;color:white;padding:13px 26px;border-radius:10px;font-weight:700;font-size:.9rem;text-decoration:none;transition:all .25s}
+        .btn-s:hover{background:#20b858}
+        @media(max-width:480px){.card{padding:40px 24px}}
+    </style>
+</head>
+<body>
+<nav><a href="/" class="logo">ide<span>ark</span></a></nav>
+<main>
+    <div class="card">
+        <div class="icon"><i class="fas fa-check"></i></div>
+        <h1>¡Mensaje recibido!</h1>
+        <p>Gracias por contactar con <strong>Ideark</strong>. Hemos recibido tu solicitud y te responderemos en menos de 24 horas con un presupuesto personalizado.</p>
+        <p>Si quieres hablar ahora mismo, escríbenos por WhatsApp y te atendemos al momento.</p>
+        <div class="btns">
+            <a href="/" class="btn-p"><i class="fas fa-home"></i> Volver al inicio</a>
+            <a href="https://wa.me/34603018190?text=Hola,%20acabo%20de%20enviar%20el%20formulario%20y%20quería%20hablar" class="btn-s" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </div>
+</main>
+</body>
+</html>
