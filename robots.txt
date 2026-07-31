@@ -1,0 +1,7 @@
+# robots.txt — ideark.es
+User-agent: *
+Allow: /
+
+Disallow: /gracias
+
+Sitemap: https://ideark.es/sitemap.xml

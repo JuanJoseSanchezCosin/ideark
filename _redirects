@@ -2,11 +2,35 @@
 /blog           /blog.html          200
 
 # SECTORES
-/web-para-restaurantes      /sectores/web-para-restaurante.html     200
-/web-para-fontaneros        /sectores/web-para-fontanero.html       200
-/web-para-peluquerias       /sectores/web-para-peluqueria.html      200
-/web-para-clinicas          /sectores/web-para-clinica.html         200
-/web-para-reformas          /sectores/web-para-reforma.html         200
+/web-para-jardineros            /web-para-jardineros.html           200
+/web-para-fontaneros            /web-para-fontaneros.html           200
+/web-para-electricistas         /web-para-electricistas.html        200
+/web-para-reformas              /web-para-reformas.html             200
+/web-para-clinicas              /web-para-clinicas.html             200
+/web-para-alquiler-vacacional   /web-para-alquiler-vacacional.html  200
+/web-para-peluquerias           /web-para-peluquerias.html          200
+/web-para-restaurantes          /web-para-restaurantes.html         200
+/web-para-talleres              /web-para-talleres.html             200
+/web-para-abogados              /web-para-abogados.html             200
+/web-para-inmobiliarias         /web-para-inmobiliarias.html        200
+/web-para-veterinarios          /web-para-veterinarios.html         200
+/web-para-autonomos             /web-para-autonomos.html            200
+
+# CIUDADES
+/diseno-web-valencia    /diseno-web-valencia.html       200
+/diseno-web-castellon   /diseno-web-castellon.html      200
+/diseno-web-sagunto     /diseno-web-sagunto.html        200
+/diseno-web-torrent     /diseno-web-torrent.html        200
+/diseno-web-gandia      /diseno-web-gandia.html         200
+/diseno-web-paterna     /diseno-web-paterna.html        200
+/diseno-web-alzira      /diseno-web-alzira.html         200
+/diseno-web-xativa      /diseno-web-xativa.html         200
+/diseno-web-lliria      /diseno-web-lliria.html         200
+/diseno-web-ontinyent   /diseno-web-ontinyent.html      200
+/diseno-web-cullera     /diseno-web-cullera.html        200
+/diseno-web-vila-real   /diseno-web-vila-real.html      200
+/diseno-web-borriana    /diseno-web-borriana.html       200
+/diseno-web-vinaros     /diseno-web-vinaros.html        200
 
 # BLOG
 /blog/cuanto-cuesta-web-restaurante         /blog/cuanto-cuesta-web-restaurante.html        200

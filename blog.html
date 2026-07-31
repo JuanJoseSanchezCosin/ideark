@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog | Consejos de marketing digital y webs para pymes | Ideark</title>
@@ -72,6 +74,11 @@
         .wa-float:hover{transform:scale(1.1)}
         @media(max-width:768px){.nav-links{display:none}.hamburger{display:block}.blog-grid{grid-template-columns:1fr}}
     </style>
+    <meta property="og:image" content="https://ideark.es/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://ideark.es/og-image.png">
 </head>
 <body>
 
@@ -191,7 +198,7 @@
     </div>
 </footer>
 
-<a href="https://wa.me/34603018190" class="wa-float" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+<a href="https://wa.me/34665327929" class="wa-float" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
 
 <script>
 const navbar=document.getElementById('navbar');
@@ -201,5 +208,6 @@ const navLinks=document.getElementById('navLinks');
 hamburger.addEventListener('click',()=>{navLinks.classList.toggle('open');hamburger.innerHTML=navLinks.classList.contains('open')?'<i class="fas fa-times"></i>':'<i class="fas fa-bars"></i>';});
 document.querySelectorAll('.filter-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');});});
 </script>
+    <script src="/js/consent.js" defer></script>
 </body>
 </html>

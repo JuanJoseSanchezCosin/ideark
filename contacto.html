@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Ideark — Presupuesto gratuito en 24 horas</title>
@@ -68,6 +70,11 @@
         .wa-float:hover{transform:scale(1.1)}
         @media(max-width:768px){.nav-links{display:none}.hamburger{display:block}.contacto-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.contact-info-card{position:static}}
     </style>
+    <meta property="og:image" content="https://ideark.es/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://ideark.es/og-image.png">
 </head>
 <body>
 <nav id="navbar">
@@ -77,7 +84,7 @@
             <li><a href="/#servicios">Servicios</a></li>
             <li><a href="/#precios">Precios</a></li>
             <li><a href="/blog">Blog</a></li>
-            <li><a href="/contacto" class="nav-cta">Hablar con nosotros</a></li>
+            <li><a href="/contacto" class="nav-cta">Pedir presupuesto</a></li>
         </ul>
         <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
     </div>
@@ -97,8 +104,9 @@
             <div>
                 <h2 class="form-title">Solicita tu presupuesto gratuito</h2>
                 <p class="form-sub">Rellena el formulario y te contactamos en menos de 24 horas. Sin compromiso y sin tecnicismos.</p>
-                <form name="contacto-ideark" method="POST" data-netlify="true" action="/gracias">
+                <form name="contacto-ideark" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias">
                     <input type="hidden" name="form-name" value="contacto-ideark">
+                    <p style="display:none"><label>No rellenar <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
                     <div class="form-row">
                         <div class="form-group">
                             <label>Nombre</label>
@@ -113,21 +121,36 @@
                         <label>Email</label>
                         <input type="email" name="email" placeholder="tu@email.com" required>
                     </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Tipo de negocio</label>
+                            <select name="negocio" required>
+                                <option value="">Selecciona tu sector</option>
+                                <option>Restaurante o bar</option>
+                                <option>Fontanero o electricista</option>
+                                <option>Peluquería o estética</option>
+                                <option>Clínica o dentista</option>
+                                <option>Reformas o construcción</option>
+                                <option>Pintor</option>
+                                <option>Alquiler vacacional</option>
+                                <option>Abogado o gestoría</option>
+                                <option>Inmobiliaria</option>
+                                <option>Taller o automoción</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Ciudad / zona</label>
+                            <input type="text" name="ciudad" placeholder="Ej. Sagunto, Valencia…" required>
+                        </div>
+                    </div>
                     <div class="form-group">
-                        <label>Tipo de negocio</label>
-                        <select name="negocio" required>
-                            <option value="">Selecciona tu sector</option>
-                            <option>Restaurante o bar</option>
-                            <option>Fontanero o electricista</option>
-                            <option>Peluquería o estética</option>
-                            <option>Clínica o dentista</option>
-                            <option>Reformas o construcción</option>
-                            <option>Abogado o gestoría</option>
-                            <option>Inmobiliaria</option>
-                            <option>Taller o automoción</option>
-                            <option>Tienda online</option>
-                            <option>Academia o formación</option>
-                            <option>Otro</option>
+                        <label>Plan de interés</label>
+                        <select name="plan" id="plan">
+                            <option value="">Aún no lo sé</option>
+                            <option value="Local">Local — 299€ + 99€/mes</option>
+                            <option value="Crecimiento">Crecimiento — 599€ + 149€/mes</option>
+                            <option value="Premium">Premium — a medida</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -158,7 +181,14 @@
                         <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
                         <div>
                             <div class="contact-item-label">WhatsApp</div>
-                            <div class="contact-item-val"><a href="https://wa.me/34603018190" target="_blank">603 018 190</a></div>
+                            <div class="contact-item-val"><a href="https://wa.me/34665327929?text=Hola,%20quiero%20m%C3%A1s%20clientes%20para%20mi%20negocio%20local" target="_blank" rel="noopener noreferrer">665 327 929</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <div class="contact-item-label">Teléfono</div>
+                            <div class="contact-item-val"><a href="tel:+34665327929">665 327 929</a></div>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -179,7 +209,7 @@
                         <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div>
                             <div class="contact-item-label">Ubicación</div>
-                            <div class="contact-item-val">Valencia, España · Trabajo remoto</div>
+                            <div class="contact-item-val">Faura / Sagunto · Toda España online</div>
                         </div>
                     </div>
                     <div class="garantias">
@@ -197,10 +227,10 @@
 <footer>
     <div class="footer-bottom">
         <p>&copy; 2026 Ideark. <a href="/">Inicio</a> · <a href="/blog">Blog</a> · <a href="/aviso-legal">Aviso Legal</a> · <a href="/privacidad">Privacidad</a></p>
-        <p><a href="https://wa.me/34603018190"><i class="fab fa-whatsapp"></i> 603 018 190</a></p>
+        <p><a href="https://wa.me/34665327929"><i class="fab fa-whatsapp"></i> 665 327 929</a></p>
     </div>
 </footer>
-<a href="https://wa.me/34603018190" class="wa-float" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+<a href="https://wa.me/34665327929" class="wa-float" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
 <script>
 const navbar=document.getElementById('navbar');
 window.addEventListener('scroll',()=>navbar.classList.toggle('scrolled',window.scrollY>50));
@@ -208,5 +238,6 @@ const hamburger=document.getElementById('hamburger');
 const navLinks=document.getElementById('navLinks');
 hamburger.addEventListener('click',()=>{navLinks.classList.toggle('open');hamburger.innerHTML=navLinks.classList.contains('open')?'<i class="fas fa-times"></i>':'<i class="fas fa-bars"></i>';});
 </script>
+    <script src="/js/consent.js" defer></script>
 </body>
 </html>
